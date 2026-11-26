@@ -89,32 +89,6 @@ Desktop updates do not require a SCUM server restart. SHA-256 verification detec
 - Never publish credentials, private profiles, host keys or sensitive server logs.
 - Review exported diagnostics before sharing them.
 
-## Build from source
-
-On Windows, install Python 3.12 or 3.13 (x64 recommended, with Tkinter and the `py` launcher). Install Inno Setup 6 or 7 if building the installer.
-
-```bat
-Build_EXE.bat
-```
-
-To build the installer and release manifest:
-
-```bat
-Build_Setup.bat
-```
-
-The installer build produces `release/AfterlifeSetup_vX.Y.Z.exe` and `release/release.json`. Publish both as assets of the matching stable GitHub release tag (`vX.Y.Z`) to support online updates. Do not include private configuration files in releases.
-
-## Troubleshooting
-
-| Issue | Suggested action |
-| --- | --- |
-| Cannot connect | Verify SFTP credentials, port, remote path and host key. |
-| No online players | Refresh the list and check whether players are online and the relay is responding. |
-| Skills do not change | Check supported SSA skill-write settings, the relay write marker and diagnostics. Refresh before retrying. |
-| Update fails | Retry from Updates or manually install the latest trusted release. |
-| Companion not detected | Check the remote directory, server logs and installed companion versions. |
-
 ## Current limitations
 
 - Attribute editing (Strength, Constitution, Dexterity and Intelligence) is not supported.
