@@ -1,6 +1,0 @@
-{
-  "version": "1.0.7",
-  "installer": "AfterlifeSetup_v1.0.7.exe",
-  "sha256": "7daebd277aedb190d22755ea90861249227f2edcf8aaac89d990dc95acfee3b6",
-  "notes": "Improved update workflow and in-place installation. User data remains separate from Program Files."
-}
